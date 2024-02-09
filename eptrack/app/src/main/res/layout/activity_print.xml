@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headerLayout"
+                android:layout_marginTop="16dp">
+                <!-- Header Layout -->
+                <TableRow
+                    android:id="@+id/headerLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/table_padding">
+
+                    <TextView
+                        android:layout_width="82dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:padding="12dp"
+                        android:text="Sr.No" />
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:padding="12dp"
+                        android:text="Items" />
+
+                    <TextView
+                        android:layout_width="123dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:padding="12dp"
+                        android:text="Value" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:padding="12dp"
+                        android:text="Date" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/totalValueTextView"
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:layout_marginTop="16dp"
+                android:padding="@dimen/table_padding"
+                android:text="Total Value: "
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+    </HorizontalScrollView>
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/totalValueButton"
+            android:layout_width="188dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:onClick="onTotalValueButtonClick"
+            android:text="Save"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/printTableButton"
+            android:layout_width="217dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:onClick="onPrintTableButtonClick"
+            android:text="Back"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+</RelativeLayout>

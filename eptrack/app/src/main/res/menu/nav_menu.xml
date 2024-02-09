@@ -1,0 +1,12 @@
+<!-- res/menu/nav_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_dashboard"
+        android:title="Dashboard"/>
+    <item
+        android:id="@+id/nav_add_expense"
+        android:title="Add Expense"/>
+    <item
+        android:id="@+id/menu_total_expense"
+        android:title="Total Expense"/>
+</menu>

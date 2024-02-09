@@ -1,0 +1,36 @@
+<!-- res/layout/activity_add_expense.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/expenseNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Expense Name" />
+
+    <EditText
+        android:id="@+id/amountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/expenseNameEditText"
+        android:layout_marginTop="16dp"
+        android:inputType="numberDecimal"
+        android:hint="Amount" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/amountEditText"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/datePicker"
+        android:layout_marginTop="16dp"
+        android:text="Save" />
+</RelativeLayout>

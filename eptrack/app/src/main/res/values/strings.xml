@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">expenses</string>
+    <string name="navigation_drawer_open">Open Drawer</string>
+    <string name="navigation_drawer_close">Close Drawer</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="total_expense_format">Total Expense: $%.2f</string>
+</resources>
